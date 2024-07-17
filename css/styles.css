@@ -1,0 +1,133 @@
+@font-face {
+  font-family: Norse;
+  src: url(../font/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+a {
+  color: #596d48;
+}
+
+.sidebar {
+  width: 30%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.548)
+    ),
+    url(../images/halie-west-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.sidebar .logo {
+  background-color: #00000079;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 5em;
+  gap: 1em;
+}
+
+.sidebar .logo h1 {
+  font-family: Norse, sans-serif;
+  color: #fff;
+  font-size: 4.7rem;
+}
+
+.sidebar .logo img {
+  height: 80px;
+}
+
+.sidebar p {
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form-container {
+  width: 70%;
+  height: 100vh;
+  padding: 3rem;
+  background-color: rgb(241, 245, 237);
+  position: relative;
+}
+
+.form-container h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  max-width: 700px;
+  margin-bottom: 1rem;
+  color: rgb(20, 20, 20);
+}
+
+#form {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 2rem 3rem;
+}
+
+#form h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: rgb(20, 20, 20);
+}
+
+.input-container {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+.input label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.input input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #596d4831;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.sign-up {
+  margin-top: 2rem;
+}
+
+.sign-up button {
+  background-color: #596d48;
+  border: 0;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}

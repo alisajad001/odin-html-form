@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Odin - Form project</title>
+
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="images/odin-lined.png" alt="Odin logo" />
+        <h1>Odin</h1>
+      </div>
+
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Halie West</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </p>
+    </div>
+
+    <!-- Form container -->
+    <div class="form-container">
+      <h2>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. <br />
+        Sign up <em>now</em> to get started.
+      </h2>
+      <h2>You know you want to.</h2>
+
+      <form action="" id="form">
+        <h3>Let's do this!</h3>
+
+        <div class="input-container">
+          <div class="input">
+            <label for="first_name">First name</label>
+            <input type="text" id="first_name" name="first_name" required />
+          </div>
+          <div class="input">
+            <label for="last_name">Last name</label>
+            <input type="text" id="last_name" name="last_name" required />
+          </div>
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input">
+            <label for="phone_number">Phone number</label>
+            <input
+              type="tel"
+              id="phone_number"
+              name="phone_number"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="123-456-7890"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="input">
+            <label for="confirm_password">Confirm password</label>
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              required
+            />
+          </div>
+        </div>
+        <div class="sign-up">
+          <button type="submit">Create Account</button>
+          <p class="already_account">
+            Already have an account? <a href="#">Log in</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
